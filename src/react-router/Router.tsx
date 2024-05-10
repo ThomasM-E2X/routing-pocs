@@ -38,6 +38,7 @@ const orders: RouteObject = {
 const browserRouter = createBrowserRouter([
   {
     path: "/",
+    errorElement: <h1>PAGE NOT FOUND</h1>,
     children: [account, credit, orders],
   },
 ]);
