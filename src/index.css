@@ -1,0 +1,29 @@
+.MenuBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+[data-is-active-path="true"] {
+  background-color: red;
+}
+
+.OrdersList {
+  display: flex;
+  flex-direction: column;
+}
+
+.OrdersList > * {
+  padding: 10px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
