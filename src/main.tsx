@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-//import { RouterProvider } from "react-router-dom";
-//import router from "./react-router/Router.tsx";
-
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 
 // Import the generated route tree
