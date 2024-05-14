@@ -10,7 +10,7 @@ function CreditResult() {
     <div>
       <Menu />
 
-      <h1> Have you been rejected? {res ? "yes" : "no"}</h1>
+      <h1> Have you been rejected? {res === "true" ? "yes" : "no"}</h1>
     </div>
   );
 }
