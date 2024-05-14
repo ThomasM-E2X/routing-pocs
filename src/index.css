@@ -4,14 +4,35 @@
   justify-content: space-around;
 }
 
+.MenuBar>* {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: rgb(222, 0, 123);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 li,
 a {
   list-style: none;
   text-decoration: none;
 }
 
-[data-is-active-path="true"] {
-  background-color: red;
+[data-is-active-path="true"],
+.MenuBar>*:hover,
+.OrdersList>*:hover,
+button:hover {
+  background-color: rgb(222, 0, 123);
+  color: white;
+}
+
+[data-is-active-path="true"]:hover {
+
+  background-color: rgb(192 2 108);
 }
 
 .OrdersList {
@@ -19,11 +40,32 @@ a {
   flex-direction: column;
 }
 
-.OrdersList > * {
-  padding: 10px 0;
+.OrdersList>* {
+  padding: 10px;
+  color: rgb(222, 0, 123);
+}
+
+.OrdersList>*:first-child:hover {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.OrdersList>*:last-child:hover {
+  border-radius: 0px 0px 20px 20px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+}
+
+button {
+  border-radius: 4px;
+  padding: 10px 14px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
